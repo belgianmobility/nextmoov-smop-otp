@@ -1,0 +1,5 @@
+.directory
+graphs/default/*.osm.pbf
+graphs/default/*gtfs.zip
+graphs/default/Graph.obj
+otp-*.jar

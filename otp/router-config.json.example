@@ -1,0 +1,23 @@
+{
+    "updaters": [
+        {
+            "type": "stop-time-updater",
+            "frequencySec": 30,
+            "sourceType": "gtfs-http",
+            "url": "http://gtfs-rt-server/operator",
+            "feedId": "operator"
+        },
+        {
+            "type": "bike-rental",
+            "frequencySec": 120,
+            "sourceType": "jcdecaux",
+            "url": "https://api.jcdecaux.com/vls/v1/stations?apiKey=~~MYKEY~~&contract=Bruxelles-Capitale"
+        },
+        {
+            "type": "bike-rental",
+            "frequencySec": 120,
+            "sourceType": "jcdecaux",
+            "url": "https://api.jcdecaux.com/vls/v1/stations?apiKey=~~MYKEY~~&contract=Namur"
+        }
+    ]
+}
