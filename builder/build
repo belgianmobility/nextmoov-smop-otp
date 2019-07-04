@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cp -a /data/* graphs/default
+
+java -Xmx8G -jar otp-1.3.0-shaded.jar --basePath $PWD --build graphs/default
+
+cp -a graphs/default/Graph.obj /data
