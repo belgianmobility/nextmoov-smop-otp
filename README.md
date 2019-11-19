@@ -1,4 +1,4 @@
-[< general](https://github.com/nextmoov/nextmoov-smop-general)
+[< Back to general](https://github.com/nextmoov/nextmoov-smop-general)
 
 # SMOP - OTP
 
