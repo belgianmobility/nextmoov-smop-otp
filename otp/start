@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cp -a /data/Graph.obj graphs/default
-java -Xmx8G -jar otp-1.3.0-shaded.jar --basePath $PWD --autoScan --server --autoReload
+java -Xmx8G -jar otp-1.4.0-shaded.jar --basePath $PWD --autoScan --server --autoReload
