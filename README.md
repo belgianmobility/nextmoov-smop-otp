@@ -2,7 +2,7 @@
 
 # SMOP - OTP
 
-This repository gives a small set of scripts to start "easily" an OTP instance. All information about OTP can be found [here](http://docs.opentripplanner.org/en/latest/).
+This repository gives a set of scripts to start "easily" an OTP instance. All information about OTP can be found [here](http://docs.opentripplanner.org/en/latest/).
 
 ## Modules
 
