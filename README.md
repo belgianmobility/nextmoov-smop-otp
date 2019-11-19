@@ -1,4 +1,4 @@
-[< general](https://github.com/nextmoov/nextmoov-smop-general)
+[< Back to general](https://github.com/nextmoov/nextmoov-smop-general)
 
 # SMOP - OTP
 
@@ -15,10 +15,21 @@ You need to trigger the build of OTP by running the following command before sta
 docker-compose run builder ./build
 ```
 
+Example of last line of the build, when it succeeds :
+```
+13:49:26.629 INFO (GraphBuilder.java:153) Graph building took 15.1 minutes.
+```
+
 ### OTP
 
-When you run `docker-compose up`, it will start OTP with the built Graph (see Builder). It takes some times.
+When you run `docker-compose up`, it will start OTP with the built Graph (see Builder). It takes some times to start.
 
-When the system is started you can acces your brand new OTP instance on (http://localhost:8080/)
+Example of log when the service is ready :
 
-A `router-config.json` example file is provided to get GTFS RT update and JC Decaux / Villo.
+```
+otp_1      | 13:56:38.721 INFO (NetworkListener.java:750) Started listener bound to [0.0.0.0:8080]
+```
+
+When the system is started you can acces your brand new OTP instance on http://localhost:8080/
+
+A `router-config.json` example file is provided to get GTFS RT update and JC Decaux / Villo. See [General > data-sources](https://github.com/nextmoov/nextmoov-smop-general#data-sources) about the GTFS RT feeds.
