@@ -22,7 +22,13 @@ Example of last line of the build (when it succeeds :-) ):
 
 ### OTP
 
-When you run `docker-compose up`, it will start OTP with the built Graph (see Builder). It takes some times.
+When you run `docker-compose up`, it will start OTP with the built Graph (see Builder). It takes some times to start.
+
+Example of log when the service is ready :
+
+```
+otp_1      | 13:56:38.721 INFO (NetworkListener.java:750) Started listener bound to [0.0.0.0:8080]
+```
 
 When the system is started you can acces your brand new OTP instance on (http://localhost:8080/)
 
