@@ -32,4 +32,4 @@ otp_1      | 13:56:38.721 INFO (NetworkListener.java:750) Started listener bound
 
 When the system is started you can acces your brand new OTP instance on http://localhost:8080/
 
-A `router-config.json` example file is provided to get GTFS RT update and JC Decaux / Villo.
+A `router-config.json` example file is provided to get GTFS RT update and JC Decaux / Villo. See [General > data-sources](https://github.com/nextmoov/nextmoov-smop-general#data-sources) about the GTFS RT feeds.
