@@ -6,7 +6,7 @@ General information : [nextmoov-smop-general](https://github.com/nextmoov/nextmo
 
 ### Builder
 
-You need to provide OSM PBF data and GTFS zip in the `data` directory aside the `docker-compose.yml` file. See [General > data-sources](https://github.com/nextmoov/nextmoov-smop-general#data-sources) for information where to acquire the needed data.
+You need to provide OSM PBF data and GTFS zip in a created `data` directory aside the `docker-compose.yml` file. See [General > data-sources](https://github.com/nextmoov/nextmoov-smop-general#data-sources) for information where to acquire the needed data.
 
 You need to trigger the build of OTP by running the following command before starting the stack:
 ```
