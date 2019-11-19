@@ -15,6 +15,11 @@ You need to trigger the build of OTP by running the following command before sta
 docker-compose run builder ./build
 ```
 
+Example of last line of the build (when it succeeds :-) ):
+```
+13:49:26.629 INFO (GraphBuilder.java:153) Graph building took 15.1 minutes.
+```
+
 ### OTP
 
 When you run `docker-compose up`, it will start OTP with the built Graph (see Builder). It takes some times.
