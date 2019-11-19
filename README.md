@@ -8,6 +8,8 @@ This repository gives a set of scripts to start "easily" an OTP instance. All in
 
 ### Builder
 
+It will start OTP in build mode with the files in `./data` as input.
+
 ### OTP
 
 When you run `docker-compose up`, it will start OTP with the built Graph (see Builder). It takes some times to start.
