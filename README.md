@@ -17,4 +17,6 @@ docker-compose run builder ./build
 
 When you run `docker-compose up`, it will start OTP with the built Graph (see Builder). It takes some times.
 
+When the system is started you can acces your brand new OTP instance on (http://localhost:8080/)
+
 A `router-config.json` example file is provided to get GTFS RT update and JC Decaux / Villo.
