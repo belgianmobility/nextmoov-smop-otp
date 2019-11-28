@@ -16,4 +16,6 @@ When you run `docker-compose up`, it will start OTP with the built Graph (see Bu
 
 When the system is started you can acces your brand new OTP instance on http://localhost:8081/
 
+And the API is accessible from http://localhost:8080/otp
+
 A `router-config.json` example file is provided to get GTFS RT update and JC Decaux / Villo. See [General > data-sources](https://github.com/nextmoov/nextmoov-smop-general#data-sources) about the GTFS RT feeds.
