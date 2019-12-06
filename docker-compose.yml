@@ -1,0 +1,35 @@
+version: '3.3'
+services:
+  # ----- reverse-proxy --------------------------------------------------------
+  traefik:
+    image: "traefik:2.0"
+    command:
+      #- "--log.level=DEBUG"
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+    ports:
+      - "8080:80"
+      - "9080:8080"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+
+  # ----- otp ------------------------------------------------------------------
+  otp-builder:
+    build: ./nextmoov-smop-otp/builder
+    volumes:
+      - ./data:/data
+
+  otp:
+    build: ./nextmoov-smop-otp/otp
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./data:/data
+    labels:
+      - "traefik.enable=true"
+      - "traefik.port=8080"
+      - "traefik.http.routers.otp-api.entrypoints=web"
+      - "traefik.http.routers.otp-api.rule=PathPrefix(`/otp`)"
+   
