@@ -2,8 +2,18 @@
 
 # SMOP - OTP
 
-This repository gives a set of scripts to start "easily" an OTP instance. All information about OTP can be found [here](http://docs.opentripplanner.org/en/latest/).
+This repository gives a set of scripts to ease the bootstrapping of an OTP instance.
 
+We invite you to review the OTP documentation for more infos about OTP.
+
+- [General information about OTP](http://docs.opentripplanner.org/en/latest/)
+- [OTP api documentation](http://dev.opentripplanner.org/apidoc/)
+
+#### Illustration
+- OTP front-end client (http://localhost:8081/)
+   ![Screenshot 2019-12-06 at 15 13 21](https://user-images.githubusercontent.com/10850995/70329410-ac3c6e00-183b-11ea-9937-a84b7ae35b7e.png)  
+- OTP api (accessible at http://localhost:8080/otp)
+   ![Screenshot 2019-12-06 at 15 16 13](https://user-images.githubusercontent.com/10850995/70329415-ae063180-183b-11ea-993a-19350bb7a63a.png)  
 
 ## Requirements
   - docker
@@ -21,7 +31,7 @@ This repository gives a set of scripts to start "easily" an OTP instance. All in
 
 ### Builder
 
-It will start OTP in build mode with the files in `./data` as input.
+It will start OTP in build mode with the files in `./data` as input. (See [General > launching-the-modules](https://github.com/nextmoov/nextmoov-smop-general/blob/master/README.md#launching-the-modules) for more information).
 
 ### OTP
 
