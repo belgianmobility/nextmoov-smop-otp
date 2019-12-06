@@ -17,6 +17,11 @@ This repository gives a set of scripts to start "easily" an OTP instance. All in
 
 
 
+## Architecture
+![Software Architecture - OTP submodule](https://user-images.githubusercontent.com/10850995/70332513-04766e80-1842-11ea-8f0a-4065272d8ac6.jpg)
+
+
+
 ## Modules
 
 ### Builder
