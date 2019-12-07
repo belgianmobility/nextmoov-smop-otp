@@ -14,3 +14,5 @@ COPY ./ /app
 VOLUME /data
 
 WORKDIR /app
+
+CMD ["./build"]
