@@ -17,12 +17,12 @@ services:
 
   # ----- otp ------------------------------------------------------------------
   otp-builder:
-    build: ./nextmoov-smop-otp/builder
+    build: ./builder
     volumes:
       - ./data:/data
 
   otp:
-    build: ./nextmoov-smop-otp/otp
+    build: ./otp
     ports:
       - "8081:8080"
     volumes:
