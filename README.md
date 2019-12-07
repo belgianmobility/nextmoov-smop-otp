@@ -17,6 +17,7 @@ We invite you to review the OTP documentation for more infos about OTP.
 
 ## Requirements
   - docker
+  - docker-compose
 
 
 ## Running the service
@@ -24,6 +25,7 @@ We invite you to review the OTP documentation for more infos about OTP.
    `git clone git@github.com:nextmoov/nextmoov-smop-otp.git`
 - move into the created folder  
    `cd nextmoov-smop-otp`
+- provide source data (see [Modules](https://github.com/nextmoov/nextmoov-smop-otp#modules))
 - run via docker-compose  
    `docker-compose up`
 
@@ -35,6 +37,10 @@ We invite you to review the OTP documentation for more infos about OTP.
 
 
 ## Modules
+
+You need to provide both **osm.pbf** file and the **static GTFS zip files** in the `data` directory  alongside the docker-compose.yml file.  
+The provided static GTFS files needs to be named xxx-gtfs.zip (where xxx is only composed of lower case letters - what you put in place of xxx doesn't matter as long as it follow the template. The otp-builder will look through the folder for file named according to said template – see [General > data-sources](https://github.com/nextmoov/nextmoov-smop-general/blob/master/README.md#data-sources) for more information).
+
 
 ### Builder
 
