@@ -20,10 +20,12 @@ We invite you to review the OTP documentation for more infos about OTP.
 
 
 ## Running the service
-- clone the repo, and move into the creted folder  
-   `git clone git@github.com:nextmoov/nextmoov-smop-maps.git`
+- clone the repo    
+   `git clone git@github.com:nextmoov/nextmoov-smop-otp.git`
+- move into the created folder  
+   `cd nextmoov-smop-otp`
 - run via docker-compose  
-  `docker-compose up`
+   `docker-compose up`
 
 
 
