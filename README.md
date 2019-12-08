@@ -16,6 +16,7 @@ We invite you to review the OTP documentation for more infos about OTP.
    ![Screenshot 2019-12-06 at 15 16 13](https://user-images.githubusercontent.com/10850995/70329415-ae063180-183b-11ea-993a-19350bb7a63a.png)  
 
 ## Requirements
+  - At least 16Go of RAM
   - docker
   - docker-compose
 
@@ -26,6 +27,8 @@ We invite you to review the OTP documentation for more infos about OTP.
 - move into the created folder  
    `cd nextmoov-smop-otp`
 - provide source data (see [Modules](https://github.com/nextmoov/nextmoov-smop-otp#modules))
+- build the database (see [with otp](https://github.com/nextmoov/nextmoov-smop-general/#with-otp) - takes 15 to 20 min)  
+   `docker-compose run otp-builder ./build`
 - run via docker-compose  
    `docker-compose up`
 
